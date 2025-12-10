@@ -1,0 +1,186 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Al-Huda Al-Nabawi",
+      "description": " Al-Huda Al-Nabawi is a digital charity platform promoting Islamic and Prophetic values. It includes an About section, a charity store, and an Admin Dashboard for managing content and donations. The login system uses email verification instead of registration, with secure token storage for two hours via Context API. Through this project, I gained solid experience in file organization, state management, and professional TypeScript usage. Built with Next.js, TypeScript, and Tailwind CSS. ",
+      "image": "images/Al-Huda-Al-Nabawi.png",
+      "techStack": [
+        "Nextjs",
+        "Typescript",
+        "tailwind",
+        "Context API",
+        "Motion Farmer"
+      ],
+      "link": "https://alhadi-app.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "TOP_SPORT_GYM",
+      "description": "A TOP_SPORT_GYM website where users register and log in to their profile page. From there, they can check if they are subscribed or not, view the start and end dates of their subscription, and see their personal ID. For the admin, they can check if a user is subscribed by entering their ID. The admin can also add a new subscription for the user",
+      "image": "images/gymHum.PNG",
+      "techStack": [
+        "React",
+        "tailwind",
+        "Context API",
+        "Motion Farmer"
+      ],
+      "link": "https://top-sport-gym.vercel.app/"
+    },
+    {
+      "id": 3,
+      "title": "TeamZone",
+      "description": "A court booking site where players need wallet credit to request money via Vodafone Cash, and admin approval is required. Once approved, they can book the court. In the My Bookings page, the reserved court appears. Players can rate others after the match. The entire team books the same court and rates each other, with the highest ratings shown on the Ratings page",
+      "image": "images/teamZone.PNG",
+      "techStack": [
+        "React",
+        "tailwind",
+        "Context API",
+        "Motion Farmer"
+      ],
+      "link": "https://team-zone-psi.vercel.app/"
+    },
+    {
+      "id": 4,
+      "title": "FirstClean",
+      "description": "A laundry app where users can place laundry orders, check prices, and the admin approves or rejects the orders.",
+      "image": "images/talabNow.PNG",
+      "techStack": [
+        "React",
+        "tailwind",
+        "Context API"
+      ],
+      "link": "https://first-clean-omega.vercel.app/"
+    }
+  ],
+  "ar": {
+    "services": [
+      {
+        "id": "web",
+        "title": "تطوير تطبيقات الويب",
+        "description": "نقدم حلول ويب متكاملة وعصرية تضمن أفضل تجربة مستخدم.",
+        "icon": "globe"
+      },
+      {
+        "id": "mobile",
+        "title": "تطوير تطبيقات الموبايل",
+        "description": "نبتكر تطبيقات موبايل سريعة وسهلة الاستخدام لكل المنصات.",
+        "icon": "smartphone"
+      },
+      {
+        "id": "desktop",
+        "title": "تطوير برمجيات سطح المكتب",
+        "description": "برامج قوية ومستقرة تلبي احتياجات الأعمال المعقدة.",
+        "icon": "monitor"
+      }
+    ],
+    "techStack": {
+      "web": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "ASP.NET",
+        "SQL"
+      ],
+      "mobile": [
+        "React Native",
+        "CSS",
+        "JavaScript"
+      ],
+      "desktop": [
+        ".NET",
+        "C#",
+        "WPF/MAUI"
+      ]
+    },
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "أحمد عبد العزيز",
+        "location": "مصر",
+        "text": "بجد تسلم ايديكم يا شباب، الموقع طلع تحفة وأحسن مما كنت متخيل بكتير. التزام في المواعيد وشغل عالي أوي، ومبسوط جداً بالتعامل معاكم.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "name": "عبد الله القحطاني",
+        "location": "المملكة العربية السعودية",
+        "text": "فريق محترف جداً ما شاء الله، تعامل راقي وسرعة في الإنجاز. التطبيق شغال ممتاز وبدون أي مشاكل، الله يوفقكم ويبارك لكم.",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "name": "Tech Corp",
+        "location": "الإمارات",
+        "text": "تجربة مميزة مع فريق Crevasio، الدعم الفني كان ممتاز واتحملوا كل التعديلات بصدر رحب. النتيجة النهائية كانت فوق التوقعات.",
+        "rating": 4
+      }
+    ]
+  },
+  "en": {
+    "services": [
+      {
+        "id": "web",
+        "title": "Web App Development",
+        "description": "We provide integrated and modern web solutions ensuring the best user experience.",
+        "icon": "globe"
+      },
+      {
+        "id": "mobile",
+        "title": "Mobile App Development",
+        "description": "We innovate fast and user-friendly mobile applications for all platforms.",
+        "icon": "smartphone"
+      },
+      {
+        "id": "desktop",
+        "title": "Desktop Software Development",
+        "description": "Powerful and stable software meeting complex business needs.",
+        "icon": "monitor"
+      }
+    ],
+    "techStack": {
+      "web": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "ASP.NET",
+        "SQL"
+      ],
+      "mobile": [
+        "React Native",
+        "CSS",
+        "JavaScript"
+      ],
+      "desktop": [
+        ".NET",
+        "C#",
+        "WPF/MAUI"
+      ]
+    },
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Ahmed Abdelaziz",
+        "location": "Egypt",
+        "text": "بجد تسلم ايديكم يا شباب، الموقع طلع تحفة وأحسن مما كنت متخيل بكتير. التزام في المواعيد وشغل عالي أوي، ومبسوط جداً بالتعامل معاكم.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "name": "Abdullah Al-Qahtani",
+        "location": "Saudi Arabia",
+        "text": "فريق محترف جداً ما شاء الله، تعامل راقي وسرعة في الإنجاز. التطبيق شغال ممتاز وبدون أي مشاكل، الله يوفقكم ويبارك لكم.",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "name": "Tech Corp",
+        "location": "UAE",
+        "text": "تجربة مميزة مع فريق Crevasio، الدعم الفني كان ممتاز واتحملوا كل التعديلات بصدر رحب. النتيجة النهائية كانت فوق التوقعات.",
+        "rating": 4
+      }
+    ]
+  }
+}
