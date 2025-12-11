@@ -7,7 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 const Features = () => {
     const { t } = useLanguage();
     return (
-        <section id="why-us" className="py-20 bg-gray-50 dark:bg-gray-900">
+        <section id="why-us" className="py-20 bg-slate-50 dark:bg-gray-900">
             <CustomContainer>
                 <CustomTitle title={t.features.title} description={t.features.description} success={true} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10 items-center">

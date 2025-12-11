@@ -12,7 +12,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
         <FaCode className="text-2xl" />
       </div>
       <div className="flex flex-col">
-        <span className="text-xl font-bold text-gray-800 dark:text-gray-100 group-[.footer-logo]:text-white leading-none">
+        <span className="text-xl font-bold text-gray-800 dark:text-gray-100 group-[.footer-logo]:text-gray-900 group-[.footer-logo]:dark:text-white leading-none">
           Crevasio
         </span>
         <span className="text-sm font-medium text-(--main-color) tracking-widest leading-none">

@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
     useEffect(() => {
         setMounted(true);
         const savedTheme = localStorage.getItem("theme");
-        if (savedTheme === "dark" || (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        if (savedTheme === "dark") {
             setIsDark(true);
             document.documentElement.classList.add("dark");
         } else {
@@ -32,7 +32,7 @@ const DarkModeToggle = () => {
     };
 
     if (!mounted) {
-        return null; 
+        return null;
     }
 
     return (

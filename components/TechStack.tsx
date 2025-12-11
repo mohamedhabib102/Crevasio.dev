@@ -31,7 +31,7 @@ const TechStack = () => {
     if (!techStack) return null;
 
     return (
-        <section id="tech-stack" className="py-20 bg-gray-50 dark:bg-gray-900">
+        <section id="tech-stack" className="py-20 bg-slate-50 dark:bg-gray-900">
             <CustomContainer>
                 <CustomTitle title={t.techStack.title} description={t.techStack.description} success={true} />
 

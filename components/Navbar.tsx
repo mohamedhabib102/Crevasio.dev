@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import CustomContainer from "@/ui/CustomContainer";
 import ToggleNavbar from "@/ui/ToggleNavbar";
 import Logo from "@/ui/Logo";
+import DarkModeToggle from "@/ui/DarkModeToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { FaGlobe } from "react-icons/fa";
 
@@ -45,7 +46,9 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
+                    </div>
 
+                    <div className="lg:flex hidden items-center gap-4">
                         {/* Language Switcher */}
                         <button
                             onClick={toggleLanguage}
@@ -54,6 +57,9 @@ const Navbar = () => {
                             <FaGlobe className="text-(--main-color)" />
                             <span>{t.navbar.switchLang}</span>
                         </button>
+
+                        {/* Dark Mode Toggle */}
+                        <DarkModeToggle />
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -65,6 +71,7 @@ const Navbar = () => {
                             <FaGlobe className="text-(--main-color)" />
                             <span>{language === "ar" ? "EN" : "AR"}</span>
                         </button>
+                        <DarkModeToggle />
                         <ToggleNavbar toggle={toggle} setToggle={setToggle} />
                     </div>
                 </div>
@@ -80,7 +87,10 @@ const Navbar = () => {
                                 <a
                                     href={link.href}
                                     onClick={() => setToggle(false)}
-                                    className="block py-2 text-gray-600 dark:text-gray-300 hover:text-(--main-color) font-medium"
+                                    className={`
+                                        block py-2 text-gray-600 dark:text-gray-300 hover:text-(--main-color) font-medium
+                                        ${language === "ar" ? "text-right" : "text-left"}
+                                        `}
                                 >
                                     {link.name}
                                 </a>

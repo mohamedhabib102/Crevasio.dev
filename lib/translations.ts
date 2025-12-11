@@ -42,7 +42,7 @@ export const translations = {
             title: "تواصل معنا",
             description: "ابدأ رحلة نجاحك الرقمي معنا اليوم",
             name: "الاسم",
-            name_ph: "اسمك الكريم",
+            name_ph: "اسمك",
             email: "البريد الإلكتروني",
             email_ph: "contact@example.com",
             message: "الرسالة",

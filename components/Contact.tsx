@@ -7,11 +7,11 @@ import { useLanguage } from "@/context/LanguageContext";
 const Contact = () => {
     const { t } = useLanguage();
     return (
-        <section id="contact" className="py-20">
+        <section id="contact" className="py-20 bg-slate-50 dark:bg-gray-900">
             <CustomContainer>
                 <CustomTitle title={t.contact.title} description={t.contact.description} success={true} />
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
-                    <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl">
+                    <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
                         <form className="space-y-6">
                             <div>
                                 <label className="block text-sm font-medium mb-2">{t.contact.name}</label>
@@ -23,7 +23,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <label className="block text-sm font-medium mb-2">{t.contact.message}</label>
-                                <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-(--main-color)" placeholder={t.contact.message_ph}></textarea>
+                                <textarea rows={4} className="resize-none w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-(--main-color)" placeholder={t.contact.message_ph}></textarea>
                             </div>
                             <button type="submit" className="w-full bg-(--main-color) text-white py-3 rounded-lg font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
                                 <span>{t.contact.send}</span>
