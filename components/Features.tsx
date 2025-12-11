@@ -51,7 +51,7 @@ const Features = () => {
                         <div className="absolute top-0 right-0 p-4 opacity-10">
                             <FaStar className="text-9xl" />
                         </div>
-                        <div className="text-6xl font-black text-gray-100 dark:text-gray-700 mb-4 flex justify-center items-center">
+                        <div className="text-6xl font-black text-gray-300 dark:text-gray-700 mb-4 flex justify-center items-center">
                             <span>100</span>
                             <span className="text-4xl text-(--main-color)">%</span>
                         </div>

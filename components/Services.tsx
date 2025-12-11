@@ -5,6 +5,7 @@ import CustomContainer from "@/ui/CustomContainer";
 import CustomTitle from "@/ui/CustomTitle";
 import { FaGlobe, FaMobileAlt, FaDesktop, FaCode } from "react-icons/fa";
 import { useLanguage } from "@/context/LanguageContext";
+import ScrollRevealBox from "@/ui/ScrollRevealBox";
 
 interface Service {
     id: string;
@@ -45,8 +46,8 @@ const Services = () => {
                 <CustomTitle title={t.services.title} description={t.services.description} success={true} />
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
                     {services.map((service) => (
-                        <div
-                            key={service.id}
+                        <ScrollRevealBox key={service.id}>
+                            <div
                             className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow"
                         >
                             <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4 text-(--main-color)">
@@ -57,6 +58,7 @@ const Services = () => {
                                 {service.description}
                             </p>
                         </div>
+                        </ScrollRevealBox>
                     ))}
                 </div>
             </CustomContainer>

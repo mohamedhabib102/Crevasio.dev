@@ -6,6 +6,8 @@ import Logo from "@/ui/Logo";
 import DarkModeToggle from "@/ui/DarkModeToggle";
 import { useLanguage } from "@/context/LanguageContext";
 import { FaGlobe } from "react-icons/fa";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -26,44 +28,82 @@ const Navbar = () => {
         setLanguage(language === "ar" ? "en" : "ar");
     };
 
+    const isAr = language === "ar";
+
     return (
         <nav className="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
             <CustomContainer>
                 <div className="flex items-center justify-between h-20">
-                    <Logo />
+                    <motion.div
+                        initial={{ opacity: 0, x: isAr ? 20 : -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <Logo />
+                    </motion.div>
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-8">
-                        <ul className="flex gap-6">
+                        <motion.ul
+                            className="flex gap-6"
+                            initial="hidden"
+                            animate="visible"
+                            variants={{
+                                hidden: { opacity: 0 },
+                                visible: {
+                                    opacity: 1,
+                                    transition: {
+                                        staggerChildren: 0.1,
+                                        delayChildren: 0.2, // Wait for logo
+                                    }
+                                }
+                            }}
+                        >
                             {currentLinks.map((link) => (
-                                <li key={link.href}>
-                                    <a
+                                <motion.li
+                                    key={link.href}
+                                    variants={{
+                                        hidden: { opacity: 0, y: -5 },
+                                        visible: { opacity: 1, y: 0 }
+                                    }}
+                                >
+                                    <Link
                                         href={link.href}
                                         className="text-gray-600 dark:text-gray-300 hover:text-(--main-color) font-medium transition-colors"
                                     >
                                         {link.name}
-                                    </a>
-                                </li>
+                                    </Link>
+                                </motion.li>
                             ))}
-                        </ul>
+                        </motion.ul>
                     </div>
 
-                    <div className="lg:flex hidden items-center gap-4">
+                    <motion.div
+                        className="lg:flex hidden items-center gap-4"
+                        initial={{ opacity: 0, x: isAr ? -20 : 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
                         {/* Language Switcher */}
                         <button
                             onClick={toggleLanguage}
                             className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 hover:border-(--main-color) text-sm font-medium transition-colors"
                         >
                             <FaGlobe className="text-(--main-color)" />
-                            <span>{t.navbar.switchLang}</span>
+                            <span>{language === "ar" ? "EN" : "AR"}</span>
                         </button>
 
                         {/* Dark Mode Toggle */}
                         <DarkModeToggle />
-                    </div>
+                    </motion.div>
 
                     {/* Mobile Menu Toggle */}
-                    <div className="flex items-center gap-4 lg:hidden">
+                    <motion.div
+                        className="flex items-center gap-4 lg:hidden"
+                        initial={{ opacity: 0, x: isAr ? -20 : 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
                         <button
                             onClick={toggleLanguage}
                             className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-200 dark:border-gray-700 text-xs font-medium"
@@ -73,7 +113,7 @@ const Navbar = () => {
                         </button>
                         <DarkModeToggle />
                         <ToggleNavbar toggle={toggle} setToggle={setToggle} />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Mobile Menu */}
