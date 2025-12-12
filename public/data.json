@@ -2,55 +2,35 @@
   "projects": [
     {
       "id": 1,
-      "title": "Al-Huda Al-Nabawi",
-      "description": " Al-Huda Al-Nabawi is a digital charity platform promoting Islamic and Prophetic values. It includes an About section, a charity store, and an Admin Dashboard for managing content and donations. The login system uses email verification instead of registration, with secure token storage for two hours via Context API. Through this project, I gained solid experience in file organization, state management, and professional TypeScript usage. Built with Next.js, TypeScript, and Tailwind CSS. ",
-      "image": "images/Al-Huda-Al-Nabawi.png",
+      "title": "Publish House",
+      "description": "Publish House is a digital book library platform with four roles: Admin, Publisher, Author, and User. Publishers register and wait for account approval before publishing books, while authors can upload their books pending review. The platform earns revenue from book sales and distributes profits to each contributor. It includes a full dashboard for managing books, approving publishers, reviewing submissions, and adding new titles. Publishers and authors can request withdrawals with a minimum of 1000. Technologies: TypeScript, Next.js, Tailwind CSS, Axios, Context API",
+      "image": "images/publishe-house.png",
       "techStack": [
         "Nextjs",
         "Typescript",
         "tailwind",
         "Context API",
-        "Motion Farmer"
+        "Motion Farmer",
+        "ASP.NET",
+        "SQL"
       ],
-      "link": "https://alhadi-app.vercel.app/"
+      "link": "https://dar-al-anqa-app.vercel.app/en"
     },
     {
       "id": 2,
-      "title": "TOP_SPORT_GYM",
-      "description": "A TOP_SPORT_GYM website where users register and log in to their profile page. From there, they can check if they are subscribed or not, view the start and end dates of their subscription, and see their personal ID. For the admin, they can check if a user is subscribed by entering their ID. The admin can also add a new subscription for the user",
-      "image": "images/gymHum.PNG",
+      "title": "Noor Al-Huda",
+      "description": "Noor Al-Huda is a religious platform offering the Holy Qur’an, morning/evening duas, and Qur’an audio playback. It includes a Community section for publishing articles and an FAQ section for sharing questions and answers. Built with Next.js, TypeScript, and Tailwind CSS. ",
+      "image": "images/nour-alhuda.png",
       "techStack": [
-        "React",
+        "Nextjs",
+        "Typescript",
         "tailwind",
         "Context API",
-        "Motion Farmer"
+        "Motion Farmer",
+        "ASP.NET",
+        "SQL"
       ],
-      "link": "https://top-sport-gym.vercel.app/"
-    },
-    {
-      "id": 3,
-      "title": "TeamZone",
-      "description": "A court booking site where players need wallet credit to request money via Vodafone Cash, and admin approval is required. Once approved, they can book the court. In the My Bookings page, the reserved court appears. Players can rate others after the match. The entire team books the same court and rates each other, with the highest ratings shown on the Ratings page",
-      "image": "images/teamZone.PNG",
-      "techStack": [
-        "React",
-        "tailwind",
-        "Context API",
-        "Motion Farmer"
-      ],
-      "link": "https://team-zone-psi.vercel.app/"
-    },
-    {
-      "id": 4,
-      "title": "FirstClean",
-      "description": "A laundry app where users can place laundry orders, check prices, and the admin approves or rejects the orders.",
-      "image": "images/talabNow.PNG",
-      "techStack": [
-        "React",
-        "tailwind",
-        "Context API"
-      ],
-      "link": "https://first-clean-omega.vercel.app/"
+      "link": "https://nour-alhud.vercel.app/"
     }
   ],
   "ar": {
