@@ -45,17 +45,11 @@ const Contact = () => {
                             </div>
                             <div className="space-y-6">
                                 <div className="flex items-center gap-4 group">
-                                    <span className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-(--main-color) text-xl group-hover:bg-(--main-color) group-hover:text-white transition-colors"><FaEnvelope /></span>
-                                    <div>
-                                        <p className="text-xs text-gray-400">{t.contact.info_email}</p>
-                                        <span className="font-semibold text-lg" dir="ltr">info@crevasio.dev</span>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-4 group">
                                     <span className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-(--main-color) text-xl group-hover:bg-(--main-color) group-hover:text-white transition-colors"><FaPhoneAlt /></span>
-                                    <div>
+                                    <div className="flex flex-col gap-1">
                                         <p className="text-xs text-gray-400">{t.contact.info_phone}</p>
-                                        <span className="font-semibold text-lg" dir="ltr">+20 123 456 7890</span>
+                                        <a href="https://wa.me/201027227796" target="_blank" rel="noopener noreferrer" className="font-semibold text-lg hover:text-(--main-color) transition-colors" dir="ltr">+20 102 722 7796</a>
+                                        <a href="https://wa.me/201103826261" target="_blank" rel="noopener noreferrer" className="font-semibold text-lg hover:text-(--main-color) transition-colors" dir="ltr">+20 110 382 6261</a>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4 group">

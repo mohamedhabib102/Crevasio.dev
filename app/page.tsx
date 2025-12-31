@@ -7,10 +7,12 @@ import TechStack from "@/components/TechStack";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+// import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-black font-sans">
+    <main className="min-h-screen bg-white dark:bg-gray-900 font-sans">
+      {/* <WhatsAppButton /> */}
       <Navbar />
       <Hero />
       <Services />

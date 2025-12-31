@@ -2,35 +2,133 @@
   "projects": [
     {
       "id": 1,
-      "title": "Publish House",
-      "description": "Publish House is a digital book library platform with four roles: Admin, Publisher, Author, and User. Publishers register and wait for account approval before publishing books, while authors can upload their books pending review. The platform earns revenue from book sales and distributes profits to each contributor. It includes a full dashboard for managing books, approving publishers, reviewing submissions, and adding new titles. Publishers and authors can request withdrawals with a minimum of 1000. Technologies: TypeScript, Next.js, Tailwind CSS, Axios, Context API",
+      "name": "Publish House",
+      "link": "https://dar-al-anqa-app.vercel.app/en",
       "image": "images/publishe-house.png",
-      "techStack": [
-        "Nextjs",
-        "Typescript",
-        "tailwind",
-        "Context API",
-        "Motion Farmer",
-        "ASP.NET",
-        "SQL"
-      ],
-      "link": "https://dar-al-anqa-app.vercel.app/en"
+      "description": "Publish House is a digital book library platform with four roles: Admin, Publisher, Author, and User. Publishers register and wait for account approval before publishing books, while authors can upload their books pending review. The platform earns revenue from book sales and distributes profits to each contributor. It includes a full dashboard for managing books, approving publishers, reviewing submissions, and adding new titles. Publishers and authors can request withdrawals with a minimum of 1000. Technologies: TypeScript, Next.js, Tailwind CSS, Axios, Context API",
+      "category": "Frameworks",
+      "technologies": [
+        {
+          "id": 1,
+          "name": "Next.js",
+          "icon": "/images/nextjs-icon.png",
+          "type": "image"
+        },
+        {
+          "id": 2,
+          "name": "TypeScript",
+          "icon": "fa-solid fa-code",
+          "type": "icon"
+        },
+        {
+          "id": 3,
+          "name": "Tailwind",
+          "icon": "/images/tailwind-css-remove-bg.png",
+          "type": "image"
+        },
+        {
+          "id": 4,
+          "name": "Context API",
+          "icon": "fa-solid fa-sitemap",
+          "type": "icon"
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Noor Al-Huda",
-      "description": "Noor Al-Huda is a religious platform offering the Holy Qur’an, morning/evening duas, and Qur’an audio playback. It includes a Community section for publishing articles and an FAQ section for sharing questions and answers. Built with Next.js, TypeScript, and Tailwind CSS. ",
+      "name": "Noor Al-Huda",
+      "link": "https://noor-alhuda-lyart.vercel.app/",
       "image": "images/nour-alhuda.png",
-      "techStack": [
-        "Nextjs",
-        "Typescript",
-        "tailwind",
-        "Context API",
-        "Motion Farmer",
-        "ASP.NET",
-        "SQL"
-      ],
-      "link": "https://nour-alhud.vercel.app/"
+      "description": "Noor Al-Huda is a religious platform offering the Holy Qur’an, morning/evening duas, and Qur’an audio playback. It includes a Community section for publishing articles and an FAQ section for sharing questions and answers. Built with Next.js, TypeScript, and Tailwind CSS. ",
+      "category": "Frameworks",
+      "technologies": [
+        {
+          "id": 1,
+          "name": "Next.js",
+          "icon": "/images/nextjs-icon.png",
+          "type": "image"
+        },
+        {
+          "id": 2,
+          "name": "TypeScript",
+          "icon": "fa-solid fa-code",
+          "type": "icon"
+        },
+        {
+          "id": 3,
+          "name": "Tailwind",
+          "icon": "/images/tailwind-css-remove-bg.png",
+          "type": "image"
+        },
+        {
+          "id": 4,
+          "name": "Context API",
+          "icon": "fa-solid fa-sitemap",
+          "type": "icon"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "XIV Fashion Store",
+      "link": "https://fashion-store-gold-iota.vercel.app/",
+      "image": "images/xiv-fashion-store.png",
+      "description": "XIV Fashion Store A premium e-commerce platform built with Next.js 15 and TypeScript. It features a high-end minimalist design, dynamic product filtering, and smooth interactive animations using Framer Motion to deliver a luxury shopping experience.",
+      "category": "Frameworks",
+      "technologies": [
+        {
+          "id": 1,
+          "name": "Next.js",
+          "icon": "/images/nextjs-icon.png",
+          "type": "image"
+        },
+        {
+          "id": 2,
+          "name": "TypeScript",
+          "icon": "fa-solid fa-code",
+          "type": "icon"
+        },
+        {
+          "id": 3,
+          "name": "Tailwind",
+          "icon": "/images/tailwind-css-remove-bg.png",
+          "type": "image"
+        },
+        {
+          "id": 4,
+          "name": "Framer Motion",
+          "icon": "fa-brands fa-unity",
+          "type": "icon"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "First Clean",
+      "link": "https://first-clean-omega.vercel.app/",
+      "image": "images/firstClean.PNG",
+      "description": "A laundry app where users can place laundry orders, check prices, and the admin approves or rejects the orders.",
+      "category": "Frameworks",
+      "technologies": [
+        {
+          "id": 1,
+          "name": "React",
+          "icon": "fa-brands fa-react react-icon",
+          "type": "icon"
+        },
+        {
+          "id": 2,
+          "name": "Tailwind",
+          "icon": "/images/tailwind-css-remove-bg.png",
+          "type": "image"
+        },
+        {
+          "id": 3,
+          "name": "Context API",
+          "icon": "fa-solid fa-sitemap",
+          "type": "icon"
+        }
+      ]
     }
   ],
   "ar": {

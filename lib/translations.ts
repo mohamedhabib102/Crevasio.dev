@@ -53,7 +53,8 @@ export const translations = {
             info_email: "البريد الإلكتروني",
             info_phone: "الهاتف",
             info_address: "العنوان",
-            address: "جمهورية مصر العربية"
+            address: "جمهورية مصر العربية",
+            contact: "تواصل معنا"
         },
         footer: {
             description: "نحول الرؤى إلى واقع رقمي متكامل. شريكك التقني الموثوق للنجاح في العصر الرقمي.",
@@ -125,7 +126,8 @@ export const translations = {
             info_email: "Email",
             info_phone: "Phone",
             info_address: "Address",
-            address: "Cairo, Egypt"
+            address: "Cairo, Egypt",
+            contact: "Contact Us"
         },
         footer: {
             description: "Turning visions into integrated digital reality. Your trusted tech partner for success in the digital age.",
